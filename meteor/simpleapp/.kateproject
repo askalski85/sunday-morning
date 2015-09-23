@@ -1,0 +1,6 @@
+{
+  "name": "MeteorReports",
+  "files": [
+    { "directory": "src"}
+  ]
+}

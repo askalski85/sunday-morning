@@ -1,0 +1,51 @@
+/* CSS declarations go here */
+
+.divChartClass {
+  width:200;
+  height:200;
+  float:left;
+}
+
+.clear {
+clear: both;
+}
+
+.topTenContainer {
+  clear: both;
+}
+
+.topTenCell {
+  width:200;
+  height:200;
+  float:left;
+  padding-left: 2mm;
+}
+
+#comparisonForm {
+  position: fixed;
+  margin-left: 80%;
+  margin-top: -10%;
+  font-size: smaller;
+  opacity: 0.5;
+}
+
+#comparisonForm:hover {
+  opacity: 1;
+}
+
+li { font-size: smaller; }
+
+li:hover { font-weight: bold; }
+
+#navigationDiv {
+    /* Provide scrollbars if needed and fix the header dimensions */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #FFFFFF;
+}
+
+#contentDiv {
+  margin-top: 200px;
+}

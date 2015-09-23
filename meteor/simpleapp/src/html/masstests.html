@@ -1,0 +1,131 @@
+<head>
+  <title>Mass Tests Statistics</title>
+</head>
+
+<body>
+<h1>{{getJobName}}</h1>
+</body>
+
+<template name="chart">
+    {{test}}
+    <hr>
+    <div id="divStatisticsContainer"></div>
+    <div class="clear"></div><hr>
+    <div id="divChartBasic">
+    <h5>Test result</h5>
+    <ul>
+      <li>Green - number of test cases</li>
+      <li>Blue - number of failures</li>
+      <li>Red - number of errors</li>
+    </ul>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartTime">
+    <h5>Route calculation time - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartVisited">
+    <h5>Visited nodes - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartVisitedAvg">
+    <h5>Visited nodes - average</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartMemory">
+    <h5>Memory usage - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartMemoryAvg">
+    <h5>Memory usage - average</h5>
+    </div>
+    <div class="clear"></div><hr>
+
+    <div id="divChartPop">
+    <h5>Pop count - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartPopAvg">
+    <h5>Pop count - average</h5>
+    </div>
+    <div class="clear"></div><hr>
+
+    <div id="divChartLen">
+    <h5>Route length - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartLenAvg">
+    <h5>Route length - average</h5>
+    </div>
+    <div class="clear"></div><hr>
+
+    <div id="divChartEtt">
+    <h5>Ett - cumulative</h5>
+    </div>
+    <div class="clear"></div><hr>
+    <div id="divChartEttAvg">
+    <h5>Ett - average</h5>
+    </div>
+    <div class="clear"></div><hr>
+</template>
+
+<template name="comparisonChart">
+  {{test}}
+    <div id="comparisonFormContainer"></div>
+    <div id="comparisonContainer"></div>
+    <div class="clear"></div><hr>
+</template>
+
+<template name="Home">
+  {{> Nav}}
+</template>
+
+<template name="Detailed">
+  {{> Nav}}
+  <div id="contentDiv">
+    {{> chart}}
+  </div>
+</template>
+
+<template name="Comparison">
+  {{> Nav}}
+  <div id="contentDiv">
+    {{> comparisonChart}}
+  </div>
+</template>
+
+<template name="Nav">
+  <div id="navigationDiv">
+  <a href="/">Home</a>
+  <table>
+    <tr>
+    <td>
+    <h5>TYPE</h5>
+    <ul>
+      <li><a href="/detailed?jobName=JOB_NAME"></a></li>
+      <li><a href="/detailed?jobName=JOB_NAME"></a></li>
+    </ul>
+    </td>
+
+    <td>
+    <h5>Comparison</h5>
+    <ul>
+      <li><a href="/comparison?jobName=JOB_NAME</a></li>
+      </ul>
+    </td>
+
+        <td>
+    <h5>Custom Comparison</h5>
+    <ul>
+      <li><a href="/comparison?jobName=Custom_Comparison_NDS">Custom_Comparison_NDS</a></li>
+    </ul>
+    </td>
+
+    </tr>
+  </table>
+  </div>
+</template>
+
+<template name="JobName">
+
+</template>
