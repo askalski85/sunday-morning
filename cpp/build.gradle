@@ -1,0 +1,13 @@
+// build.gradle
+apply plugin: 'cpp'
+
+libraries {
+    gradle_test {}
+}
+executables {
+    main {
+        binaries.all {
+            lib libraries.gradle_test.shared
+        }
+    }
+}
