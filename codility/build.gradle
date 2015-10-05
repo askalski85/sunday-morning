@@ -1,0 +1,13 @@
+// build.gradle
+apply plugin: 'cpp'
+
+libraries {
+    lesson1 {}
+}
+executables {
+    main {
+        binaries.all {
+            lib libraries.lesson1.shared
+        }
+    }
+}
