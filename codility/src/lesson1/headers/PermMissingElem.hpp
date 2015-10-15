@@ -1,8 +1,8 @@
 #include <vector>
 
-class TapeEquilibrium
+class PermMissingElem
 {
     public:
-        TapeEquilibrium(){};
+        PermMissingElem(){};
         int solution(std::vector<int> &A);
 };

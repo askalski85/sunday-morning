@@ -3,9 +3,6 @@
 #include <stdlib.h>  //abs
 #include <iostream>
 
-TapeEquilibrium::TapeEquilibrium()
-{}
-
 int TapeEquilibrium::solution(std::vector<int> &A){
     int size = A.size();
     std::vector<int> diffsArray(size);
