@@ -15,7 +15,8 @@ model {
         }
     }
     components {
-        lesson1(NativeLibrarySpec) {}
+      lesson1(NativeLibrarySpec) {}
+      lesson2(NativeLibrarySpec) {}
     }
 }
 binaries.withType(GoogleTestTestSuiteBinarySpec) {
