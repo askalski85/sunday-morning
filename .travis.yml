@@ -1,2 +1,2 @@
 language: groovy
-script: cd codility && build
+script: cd codility && gradle build
